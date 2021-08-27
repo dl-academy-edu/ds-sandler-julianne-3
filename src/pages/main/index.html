@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/static/fonts/stylesheet.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>DLK Module 3</title>
+</head>
+<body>
+  @@include('header/index.html')
+    <main>
+     <section class="author container">
+        <div class="author__main-information">
+          <h1 class="author__name">Antonina Antoninovna</h1>
+          <p class="author__information">Future front-end developer
+            23 years old, Tolyatti</p>
+        </div>
+        <img class="author__img" src="../../static/images/author-photo.jpg" alt="Author Photo">
+        <div class="author__pagination">
+          <button class="author__button">
+            <svg class="left" width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12.5791" y="23.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 12.5791 23.6992)"
+                fill="#070707" />
+              <rect x="14.7002" y="2.41992" width="16.5512" height="3" rx="1.5" transform="rotate(135 14.7002 2.41992)"
+                fill="#070707" />
+            </svg>
+          </button>
+          <div class="author__pages">
+            <button class="author__page author__page_active"></button>
+            <button class="author__page"></button>
+            <button class="author__page"></button>
+            <button class="author__page"></button>
+          </div>
+          <button class="author__button">
+            <svg class="right" width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.4209" y="0.300842" width="16.5512" height="3" rx="1.5" transform="rotate(45 2.4209 0.300842)"
+                fill="#070707" />
+              <rect x="0.299805" y="21.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.299805 21.5801)"
+                fill="#070707" />
+            </svg>
+          </button>
+        </div>
+      </section>
+           <!--quote-цитата. Не уверена, что название логичное, но другого в голову не пришло-->
+      <section class="about">
+        <h2 class="title about__title">About me</h2>
+        <div class="about__quote">
+          <p class="about__text">Aliquam tortor molestie turpis est tristique. Congue diam orci amet quis semper ut. Vitae
+            aenean nibh facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel
+            sagittis.</p>
+        </div>
+        <div class="about__quote about__quote_right">
+          <p class="about__text">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam dictum ipsum nisl, sed
+            pulvinar. Commodo elit sed a fermentum non justo. Etiam platea consectetur.</p>
+        </div>
+        <div class="about__quote">
+          <p class="about__text">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc
+            ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p>
+        </div>
+      </section>
+<!--abilities-способности;language-язык (программирования)-->
+
+      <section class="skills container">
+        <h2 class="title skills__title">Skills</h2>
+        <p class="skills__work">I work in such programs as</p>
+        <div class="skills__abilities">
+          <div class="skills__ability">
+            <img src="../../static/images/html.svg" alt="html" class="skills__img">
+            <span class="skills__language">HTML 5</span>
+            <div class="skills__percent">
+              <span class="skills__amount">85%</span>
+              <span class="skills__strip"></span>
+            </div>
+          </div>
+          <div class="skills__ability">
+            <img src="../../static/images/css-scss.svg" alt="html" class="skills__img">
+            <span class="skills__language">CSS/SCSS</span>
+            <div class="skills__percent">
+              <span class="skills__amount">55%</span>
+              <span class="skills__strip skills__strip_55"></span>
+            </div>
+          </div>
+          <div class="skills__ability">
+            <img src="../../static/images/javasript.svg" alt="html" class="skills__img">
+            <span class="skills__language">JavaScript</span>
+            <div class="skills__percent">
+              <span class="skills__amount">5%</span>
+              <span class="skills__strip skills__strip_5"></span>
+            </div>
+          </div>
+          <div class="skills__ability">
+            <img src="../../static/images/git-github.svg" alt="html" class="skills__img">
+            <span class="skills__language">Git/GitHub</span>
+            <div class="skills__percent">
+              <span class="skills__amount">15%</span>
+              <span class="skills__strip skills__strip_15"></span>
+            </div>
+          </div>
+          <div class="skills__ability">
+            <img src="../../static/images/figma.svg" alt="html" class="skills__img">
+            <span class="skills__language">Figma</span>
+            <div class="skills__percent">
+              <span class="skills__amount">80%</span>
+              <span class="skills__strip skills__strip_80"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <section class="portfolio">
+        <h2 class="title portfolio__title">Portfolio</h2>
+        <div class="portfolio__slider container">
+          <img src="../../static/images/portfolio-site.jpg" alt="site DLK" class="portfolio__img">
+          <button class="portfolio__button"><img src="../../static/images/left-arrow.svg" alt=""></button>
+          <button class="portfolio__button portfolio__button_right"><img src="../../static/images/right-arrow..svg" alt=""></button>
+          <div class="portfolio__footer">
+            <a href="#" class="portfolio__link">Learning site for DL Academy courses</a>
+            <p class="portfolio__description">A simple multi-page static site. The design layout was in Figma. HTML and
+              CSS were
+              used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+          </div>
+        </div>
+      </section>
+      <button class="button-scroll button-scroll_js button-scroll_hidden">
+        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)"
+            fill="#070707" />
+          <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)"
+            fill="#070707" />
+        </svg>
+      </button>
+    </main>
+    @@include('footer/index.html')
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
